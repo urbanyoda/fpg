@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <title>Quiz</title>
+</head>
+
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><symbol id="star" viewBox="0 0 83.44 79.35"><polygon points="41.72 3.39 53.61 27.49 80.21 31.36 60.97 50.12 65.51 76.61 41.72 64.1 17.93 76.61 22.47 50.12 3.22 31.36 29.82 27.49 41.72 3.39" style="fill:#fc0;stroke:#e09e34;stroke-miterlimit:10;stroke-width:3px"/></symbol></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><symbol id="best"  viewBox="0 0 221.79 325" ><path d="M89,0V12H79V62H63V12H54V0Z" style="fill:#ffffff"/><path d="M130,0V62H114V36h-5V62H93V0h16V22h5V0Z" style="fill:#ffffff"/><path d="M137,0h27V12H153V24h10V36H153V50h12V62H137Z" style="fill:#ffffff"/><path d="M36,79H52.18c5.14,0,9,.23,11.67,1a11.42,11.42,0,0,1,6.41,4.77c1.63,2.44,2.44,6.32,2.44,11.74,0,3.66-.57,6.2-1.72,7.64s-3.41,2.54-6.8,3.32c3.77.85,6.4,2.26,7.74,4.24s2.08,5,2.08,9.08v5.81c0,4.24-.55,7.37-1.52,9.41a7.62,7.62,0,0,1-4.66,4c-2.12.75-6.49,1-13,1H36ZM52,89.38v13.94l1.73,0c1.6,0,2.67-.39,3.11-1.18s.68-3,.68-6.76A11,11,0,0,0,57,91.22a2.74,2.74,0,0,0-1.51-1.49A11.72,11.72,0,0,0,52,89.38Zm0,23.7v17.54c3-.08,4.09-.44,4.72-1.08S58,127.3,58,124.77v-5.85c0-2.68-.61-4.31-1.18-4.88S55,113.16,52,113.08Z" style="fill:#ffffff"/><path d="M80,79h27V91H96v12h10v12H96v14h12v12H80Z" style="fill:#ffffff"/><path d="M147,98H132V93c0-2.17-.17-3.55-.55-4.14a2.11,2.11,0,0,0-1.92-.89,2.45,2.45,0,0,0-2.22,1.2,7,7,0,0,0-.75,3.64,10.31,10.31,0,0,0,.85,4.73q.81,1.59,4.61,3.83,10.88,6.46,13.71,10.6t2.83,13.36q0,6.7-1.57,9.87t-6.06,5.32a24,24,0,0,1-10.45,2.15,23.38,23.38,0,0,1-11.17-2.48,11.94,11.94,0,0,1-6-6.31c-1-2.56-1.33-6.18-1.33-10.88v-4h15v7.51c0,2.35.18,3.86.61,4.53a2.44,2.44,0,0,0,2.25,1,2.64,2.64,0,0,0,2.41-1.28,7.3,7.3,0,0,0,.79-3.79q0-5.54-1.51-7.24T123.92,114a74.94,74.94,0,0,1-8.05-5.85,13.67,13.67,0,0,1-3.27-5A22.14,22.14,0,0,1,111.3,95q0-7.2,1.84-10.53a12.38,12.38,0,0,1,5.94-5.21A23.7,23.7,0,0,1,129,77.34a25.82,25.82,0,0,1,10.82,2.05c3,1.37,4.86,3.09,5.83,5.17S147,90.17,147,95.15Z" style="fill:#ffffff"/><path d="M186,79V91h-9v50H161V91H151V79Z" style="fill:#ffffff"/><path d="M80,220v8H67.53a19.58,19.58,0,0,1-6.27-.72,4.19,4.19,0,0,1-2.46-2.05,12.74,12.74,0,0,1-.64-4.87,17.24,17.24,0,0,1-9.52-2.91,13,13,0,0,1-5.31-7c-.85-2.83-1.32-7.05-1.32-12.68v-19.4a46.7,46.7,0,0,1,.8-9.74,15.61,15.61,0,0,1,3.14-6.31A14.71,14.71,0,0,1,52,157.85a21.75,21.75,0,0,1,8.25-1.51A24.25,24.25,0,0,1,70,158.2a15.24,15.24,0,0,1,6.39,4.72,15.47,15.47,0,0,1,2.85,5.94A46.93,46.93,0,0,1,80,178v20.36c0,5.57-.37,9.35-.91,11.34a8.72,8.72,0,0,1-3.17,4.74,16.5,16.5,0,0,1-6.16,2.69c.08,1.4.36,2.11.86,2.48s1.68.37,3.57.37ZM63,173.76c0-2.92.09-4.78-.23-5.59A1.77,1.77,0,0,0,60.9,167a2.46,2.46,0,0,0-2.09,1c-.45.66-.81,2.6-.81,5.83V203a24.89,24.89,0,0,0,.64,6.74,2.07,2.07,0,0,0,2.17,1.28,1.79,1.79,0,0,0,1.93-1.47c.31-1,.26-3.32.26-7Z" style="fill:#ffffff"/><path d="M123,158v41.55a71.26,71.26,0,0,1-.5,10,13.63,13.63,0,0,1-2.77,5.92,14.29,14.29,0,0,1-6,4.61,22.67,22.67,0,0,1-8.81,1.57A24.78,24.78,0,0,1,95,219.8,14.92,14.92,0,0,1,88.55,215a13.1,13.1,0,0,1-2.34-6.29c-.26-2.21-.21-6.85-.21-13.92V158h16v46.66a18.89,18.89,0,0,0,.42,5.25,1.73,1.73,0,0,0,1.79,1.14,2.12,2.12,0,0,0,2.17-1.26,20.7,20.7,0,0,0,.62-5.94V158Z" style="fill:#ffffff"/><path d="M146,158v62H129V158Z" style="fill:#ffffff"/><path d="M179,158v12.2L167.21,208H179v12H149v-8.75L161.85,170H151V158Z" style="fill:#ffffff"/><path d="M0,242H36v17H22v16H35v15H22v19H38v16H0Z" style="fill:#ffffff"/><path d="M95.46,242l-11,83H51.57L39.06,242H61.89c2.65,23,4.55,42.38,5.68,58.25q1.68-24.06,3.56-42.75l1.5-15.5Z" style="fill:#ffffff"/><path d="M99,242h36v17H121v16h13v15H121v19h16v16H99Z" style="fill:#ffffff"/><path d="M143,242h15.19c10.21,0,17.13.45,20.75,1.23a14.32,14.32,0,0,1,8.84,6.07q3.42,4.86,3.42,15.51,0,9.72-2.42,13.07t-9.51,4q6.43,1.6,8.64,4.27a12.37,12.37,0,0,1,2.65,4.91c.36,1.49.44,5.6.44,12.31V325H171V297.68c0-4.46-.06-7.21-.76-8.28s-3.24-1.59-5.24-1.59V325H143Zm22,14.35v18.51a9.4,9.4,0,0,0,4.83-1c1-.67,1.17-2.84,1.17-6.5v-4.58c0-2.64-.18-4.37-1.12-5.19S167,256.35,165,256.35Z" style="fill:#ffffff"/><path d="M221.79,242l-3.39,63h-16L199,242ZM220,309v16H201V309Z" style="fill:#ffffff"/></symbol></svg>
+  <div id="container" class="hide">
+    <div id="intro">
+      
+      <div id="bestintro">
+        <svg id="best1">
+          <use xlink:href="#best">
+        </svg>
+      </div>
+
+    </div>
+    <form method="POST" action="" id="form_id">
+      <h1>Title</h1>
+      <div id="question">
+       <h2 id="qhead"></h2>
+      <h3 id="qtitle"></h3>
+        <ul class="choices">
+        </ul>
+      </div>
+    </form>
+      <div id="final">
+        <div id="stars">
+          <h2>Your score is</h2>
+          <div id="stars">
+            <div class="star">
+              <svg id="star1" class="starclone">
+                <use xlink:href="#star">
+              </svg>
+            </div>
+            <div class="star">
+              <svg id="star2" class="starclone">
+                <use xlink:href="#star">
+              </svg>
+            </div>
+            <div class="star">
+              <svg id="star3" class="starclone">
+                <use xlink:href="#star">
+              </svg>
+            </div>
+
+           </div>
+        </div>
+        <div id="playagain"></div>
+      </div>
+  </div>
+
+</body>
+
+  <script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js" ></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/TweenMax.min.js"></script>
+
+
+<script>
+  $(function() {
+  var curr = -1,
+      questions = ["France's capital?","Spain's capital?","England's capital?"],
+      answers = [
+        ['Lima', 'Paris', 'Lisbon','Edinburgh'],
+        ['Madrid','Berlin','Montreal','London'],
+        ['Birmingham','Cardiff','Washington', 'London']
+      ],
+      correct = [1,0,3],
+      p = 0,
+      count, qcount, sellabel, t;
+    
+  if (TweenMax) t=TweenMax;
+    
+  init();
+  
+  function init() {
+    count = answers[0].length;
+    qcount = questions.length;
+    for (var i = count-1, j, temp; i>-1; i--) {
+      j = count - 1 - i;
+      temp = '<li class="choice"><input type="radio" name="label' + j + '" id="answer' + j+ '" value="' + j + '"><label for="answer' + j + '">' + answers[0][j] +'</label></li>';
+      $('.choices').append(temp);
+    }
+    
+    $.ajax({
+      type: "POST",
+      url: 'scores.php',
+      data: {fnname: 'begin'},
+
+      success: function(data) {
+        handleData(data);
+      }
+    });
+    addChoices();
+  }
+        
+  function addChoices() {
+    t.set(['#qhead', '#qtitle'], {x:-300, opacity:1});
+    t.set(['.choice'], {scale:0.5});
+    t.set(['#final'], {autoAlpha:0});
+    t.set(['#star1', '#star2', '#star3'], {scale:0, autoAlpha:0});
+    t.set('#bestintro', {scale:0})
+    
+    
+    t.to('#bestintro', 1, {scale:1, opacity:1, ease:Elastic.easeOut })
+    t.to('#bestintro', 0.5, {scale:0.3, rotation:360, opacity:0, delay:2 })
+    t.to('#intro', 0.5, {autoAlpha:0, delay:3, onComplete:updateQuestion})
+    
+    $('.choices')[0].addEventListener('click', choiceSelected);
+      
+//    t.to('#question'+(num), 0.25, {opacity:1});
+//    t.staggerFrom('#question'+(num)+' .choice',1, {scale:0.3, opacity:0, ease:Back.easeIn}, 0.1);
+  }
+  
+  function choiceSelected(e) {
+    sel = e.target;
+    
+    sellabel = $('label[for=answer' + sel.value + ']').addClass("selected");
+    
+    var delay = setTimeout(function() {
+      clearTimeout(delay);
+      console.log(sel.value)
+      
+      if ((sel.value == correct[curr]) && (p==1)) {
+        p++
+//        console.log("yay");
+        submitScore();
+      } else {
+        p++
+//        console.log("nay");
+      }
+      
+      
+      t.to(['#qhead', '#qtitle'], 0.5, {x:300, opacity:0});
+      t.staggerTo('.choice', 0.5, {y:"+=100", opacity:0, ease:Back.easein}, 0, updateQuestion);
+    }, 1000)
+
+  }
+    
+  function updateQuestion() {
+    p = 0;
+    if (typeof sellabel != 'undefined' ) {
+      sellabel.removeClass("selected");
+      t.set('.choice', {clearProps:"all", scale:0.5, opacity:0});
+      t.set(['#qhead', '#qtitle'], {x:-300, opacity:1});
+//      t.set('.choice', {scale:0.5, opacity:0});
+    }
+    curr++;
+    //console.log(curr+"  "+qcount);
+    if (curr < qcount) {        
+      $('#qhead').text('Question ' + (curr+1));
+      $('#qtitle').text(questions[curr]);
+      for (var i = 0;i<count; i++) {
+        $('label[for=answer'+i+']').text(answers[curr][i]);
+      }
+      t.to('#qhead', 0.5, {x:50});
+      t.to('#qtitle', 0.5, {x:50, delay:0.2});
+      t.staggerTo('.choice', 1, {scale:1, opacity:1, ease:Elastic.easeOut, delay:0.8}, 0.1);
+    } else {
+      finishQuiz();
+    }
+
+  }
+
+  function submitScore() {
+    $.ajax({
+      type: "POST",
+      url: 'scores.php',
+      data: {fnname: 'add'},
+
+      success: function(data) {
+        handleData(data);
+      }
+    });
+  };
+
+  function finishQuiz() {
+    $.ajax({
+      type: "POST",
+      url: 'scores.php',
+      data: {fnname: 'total'},
+
+      success: function(data) {
+        showFinal(data);
+      }
+    });
+  }
+
+  function showFinal(data) {
+//    alert(data);
+    t.to('#final', 0.25, {autoAlpha:1});
+    var score = [];
+     switch (Number(data)) {
+       case 1:
+         score = [$('#star1')[0]];
+         break;
+      case 2:
+         score = [$('#star1')[0], $('#star2')[0]];
+         break;
+      case 3:
+         score = [$('#star1')[0], $('#star2')[0], $('#star3')[0]];
+         break;
+       default:
+         break;
+     }
+    console.log(score);
+    
+    if (Number(data) > 0) t.staggerTo(score, 0.25, {rotation:360, autoAlpha:1, scale: 1, delay:1}, 0.3);
+  }
+    
+  function handleData (data) {
+    console.log("success!  " + data);
+  }
+    
+  
+    
+  });
+</script>
+
+</html>
